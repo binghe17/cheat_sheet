@@ -1,0 +1,965 @@
+From: <ÓÉ Windows Internet Explorer 8 ±£´æ>
+Subject: PHP 5 - Online Cheat Sheet
+Date: Thu, 25 Dec 2014 01:16:05 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01D01FE0.5B23E9C0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01D01FE0.5B23E9C0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.serversidemagazine.com/cheat-sheets/PHP5/
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>PHP 5 - Online Cheat Sheet</TITLE>
+<META content=3D"text/html; charset=3Dutf-8" =
+http-equiv=3DContent-type><LINK=20
+rel=3Dstylesheet type=3Dtext/css=20
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/css/base.css"=
+=20
+charset=3Dutf-8 media=3Dscreen,projection><LINK rel=3Dstylesheet =
+type=3Dtext/css=20
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/css/syntax.cs=
+s"=20
+charset=3Dutf-8 media=3Dscreen,projection><!--[if IE]>
+<STYLE type=3Dtext/css>.clearfix {
+	ZOOM: 1; DISPLAY: block
+}
+</STYLE>
+<![endif]-->
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23588"></HEAD>
+<BODY>
+<H1><A =
+href=3D"http://www.serversidemagazine.com/">Server-Side&nbsp;<SPAN=20
+class=3Dmag>Magazine_</SPAN></A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;PHP=20
+5 Online Cheat Sheet v1.3 <SPAN class=3Dupdate>(updated November 13th,=20
+2008)</SPAN></H1>
+<DIV id=3Ddoc>
+<UL class=3D"menu clearfix">
+  <LI><SPAN class=3Dhdr-m>Type</SPAN><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#types-boolea=
+n">Boolean</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#types-intege=
+r">Integer</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#types-string=
+">String</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#types-array"=
+>Array</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#types-object=
+">Object/Class</A>=20
+  </LI>
+  <LI><SPAN class=3Dhdr-m>String</SPAN><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#string-funct=
+ions">functions</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#string-conve=
+rsion">conversion</A>=20
+  </LI>
+  <LI><SPAN class=3Dhdr-m>Array</SPAN><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#array-functi=
+ons">functions</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#array-conver=
+sion">conversion</A>=20
+  </LI>
+  <LI><SPAN class=3Dhdr-m>Class</SPAN><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#class-defini=
+tion">definition</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#class-member=
+-declaration">member=20
+  declaration</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#class-member=
+-visibility">member=20
+  visibility</A> </LI>
+  <LI><SPAN class=3Dhdr-m>Date/Time</SPAN><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#datetime-fun=
+ctions">functions</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#datetime-for=
+mats">formats</A>=20
+  </LI>
+  <LI><SPAN class=3Dhdr-m>Predefined Variables</SPAN><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#pv-server">$=
+_SERVER</A><A=20
+  =
+href=3D"http://www.serversidemagazine.com/cheat-sheets/PHP5/#pv-files">$_=
+FILES</A>=20
+  </LI></UL>
+<DIV class=3Dbox>
+<H2 id=3Dtypes-boolean><STRONG>Type: <SPAN =
+class=3Dhdr>Boolean</SPAN></STRONG></H2>
+<UL>
+  <LI><SPAN class=3Dcaption><STRONG>Values (case =
+insensitive):</STRONG></SPAN>=20
+  TRUE, FALSE, true, false</LI>
+  <LI><SPAN class=3Dcaption><STRONG>Casts:</STRONG></SPAN> (bool), =
+(boolean)</LI>
+  <LI class=3Dwarning>The value <EM>-1</EM> is considered TRUE, like any =
+other=20
+  non-zero (whether negative or positive) number!</LI></UL></DIV>
+<DIV class=3Dbox>
+<H2 id=3Dtypes-integer><STRONG>Type: <SPAN =
+class=3Dhdr>Integer</SPAN></STRONG></H2>
+<UL>
+  <LI><SPAN class=3Dcaption><STRONG>Casts:</STRONG></SPAN> (int), =
+(integer)</LI>
+  <LI class=3Dwarning>If PHP encounters a number beyond the bounds of =
+the integer=20
+  type, it will be interpreted as a float instead.</LI></UL></DIV>
+<DIV class=3Dbox>
+<H2 id=3Dtypes-string><STRONG>Type: <SPAN =
+class=3Dhdr>String</SPAN></STRONG></H2>
+<UL>
+  <LI>When a string is specified in double quotes (") the variables are =
+parsed=20
+  within it. </LI>
+  <LI id=3Dstring-conversion><SPAN class=3Dcaption><STRONG>Converting to =
+
+  string:</STRONG></SPAN> with cast <EM>(string)</EM> or <A=20
+  href=3D"http://docs.php.net/strval"><EM>strval()</EM></A></LI>
+  <LI id=3Dstring-functions><SPAN class=3Dcaption><STRONG>String=20
+  Functions:</STRONG></SPAN><BR>
+  <UL>
+    <LI><STRONG>array <A =
+href=3D"http://docs.php.net/explode">explode</A>( string=20
+    $delimiter , string $string , [ int $limit ] )</STRONG> - =
+<EM>Returns an=20
+    array of strings, each of which is a substring of string formed by =
+splitting=20
+    it on boundaries formed by the string delimiter</EM></LI>
+    <LI><STRONG>string <A =
+href=3D"http://docs.php.net/implode">implode</A>( string=20
+    $glue , array $pieces )</STRONG> - <EM>Join array elements with a =
+glue=20
+    string</EM></LI>
+    <LI><STRONG>string <A=20
+    href=3D"http://docs.php.net/htmlentities">htmlentities</A>( string =
+$string , [=20
+    int $quote_style , [ string $charset ,[ bool $double_encode ]]] =
+)</STRONG> -=20
+    <EM>Convert all applicable characters to HTML entities</EM></LI>
+    <LI><STRONG>string <A=20
+    =
+href=3D"http://docs.php.net/html_entity_decode">html_entity_decode</A>( =
+string=20
+    $string , [ int $quote_style , [ string $charset ]] )</STRONG> - =
+<EM>Convert=20
+    all HTML entities to their applicable characters</EM></LI>
+    <LI><STRONG>int <A href=3D"http://docs.php.net/strlen">strlen</A>( =
+string=20
+    $string )</STRONG> - <EM>Get string length</EM></LI>
+    <LI><STRONG>string <A =
+href=3D"http://docs.php.net/strstr">strstr</A>( string=20
+    $haystack , mixed $needle , [ bool $before_needle ] )</STRONG> - =
+<EM>Find=20
+    first occurrence of a string</EM></LI>
+    <LI><STRONG>int <A href=3D"http://docs.php.net/strpos">strpos</A>( =
+string=20
+    $haystack , mixed $needle , [ int $offset ] )</STRONG> - <EM>Returns =
+the=20
+    numeric position of the first occurrence of needle in the haystack=20
+    string</EM></LI>
+    <LI><STRONG>string <A =
+href=3D"http://docs.php.net/substr">substr</A>( string=20
+    $string , int $start , [ int $length ] )</STRONG> - <EM>Return part =
+of a=20
+    string</EM></LI></UL></LI></UL></DIV>
+<DIV class=3Dbox>
+<H2 id=3Dtypes-array><STRONG>Type: <SPAN =
+class=3Dhdr>Array</SPAN></STRONG></H2>
+<UL>
+  <LI>An array can be created by the <A=20
+  =
+href=3D"http://www.php.net/manual/en/function.array.php"><EM>array()</EM>=
+</A>=20
+  language construct.</LI>
+  <LI>The <A href=3D"http://docs.php.net/unset"><EM>unset()</EM></A> =
+function=20
+  allows removing keys from an array.</LI>
+  <LI id=3Darray-conversion><SPAN class=3Dcaption><STRONG>Converting to=20
+  array:</STRONG></SPAN><EM>(array)$scalarValue</EM> or=20
+  <EM>array($scalarValue)</EM></LI>
+  <LI id=3Darray-functions><SPAN class=3Dcaption><STRONG>Array=20
+  Functions:</STRONG></SPAN><BR>
+  <UL>
+    <LI><STRONG>array <A =
+href=3D"http://docs.php.net/array_diff">array_diff</A>(=20
+    array $array1 , array $array2 , [ array $ ... ] )</STRONG> - =
+<EM>Compares=20
+    array1 against array2 and returns the difference</EM></LI>
+    <LI><STRONG>array <A =
+href=3D"http://docs.php.net/array_keys">array_keys</A>(=20
+    array $input , [ mixed $search_value ,[ bool $strict ]] )</STRONG> - =
+
+    <EM>Return all the keys of an array</EM></LI>
+    <LI><STRONG>array <A =
+href=3D"http://docs.php.net/array_map">array_map</A>(=20
+    callback $callback , array $arr1 , [ array $... ] )</STRONG> - =
+<EM>Applies=20
+    the callback to the elements of the given arrays</EM></LI>
+    <LI><STRONG>bool <A =
+href=3D"http://docs.php.net/array_walk">array_walk</A>(=20
+    array &amp;$array , callback $funcname ,[ mixed $userdata ] =
+)</STRONG> -=20
+    <EM>Apply a user function to every member of an array</EM></LI>
+    <LI><STRONG>array <A =
+href=3D"http://docs.php.net/array_merge">array_merge</A>(=20
+    array $array1 ,[ array $array2 , [ array $... ]] )</STRONG> - =
+<EM>Merge one=20
+    or more arrays</EM></LI>
+    <LI><STRONG>mixed <A =
+href=3D"http://docs.php.net/array_pop">array_pop</A>(=20
+    array &amp;$array )</STRONG> - <EM>Pop the element off the end of=20
+    array</EM></LI>
+    <LI><STRONG>int <A =
+href=3D"http://docs.php.net/array_push">array_push</A>(=20
+    array &amp;$array , mixed $var ,[ mixed $... ] )</STRONG> - <EM>Push =
+one or=20
+    more elements onto the end of array</EM></LI>
+    <LI><STRONG>mixed <A =
+href=3D"http://docs.php.net/array_shift">array_shift</A>(=20
+    array &amp;$array )</STRONG> - <EM>Shift an element off the =
+beginning of=20
+    array</EM></LI>
+    <LI><STRONG>mixed <A=20
+    href=3D"http://docs.php.net/array_unshift">array_unshift</A>( array=20
+    &amp;$array , mixed $var , [ mixed $... ] )</STRONG> - <EM>Prepend =
+one or=20
+    more elements to the beginning of an array</EM></LI>
+    <LI><STRONG>array <A =
+href=3D"http://docs.php.net/array_slice">array_slice</A>(=20
+    array $array , int $offset ,[ int $length ,[ bool $preserve_keys ]]=20
+    )</STRONG> - <EM>Returns the sequence of elements from the array =
+array as=20
+    specified by the offset and length parameters</EM></LI>
+    <LI><STRONG>array <A=20
+    href=3D"http://docs.php.net/array_splice">array_splice</A>( array =
+&amp;$input=20
+    , int $offset ,[ int $length ,[ mixed $replacement ]] )</STRONG> -=20
+    <EM>Removes the elements designated by offset and length from the =
+input=20
+    array, and replaces them with the elements of the replacement array, =
+if=20
+    supplied</EM></LI>
+    <LI><STRONG>array <A =
+href=3D"http://docs.php.net/in_array">in_array</A>( mixed=20
+    $needle , array $haystack ,[ bool $strict ] )</STRONG> - <EM>Checks =
+if a=20
+    value exists in an array, searches haystack for=20
+needle</EM></LI></UL></LI></UL></DIV>
+<DIV class=3Dbox>
+<H2 id=3Dtypes-object><STRONG>Type: <SPAN=20
+class=3Dhdr>Object/Class</SPAN></STRONG></H2>
+<UL>
+  <LI>To instatiate a class use the <EM>new</EM> statement.</LI>
+  <LI>If a value of any other type is converted to an object, a new =
+instance of=20
+  the stdClass built-in class is created.</LI>
+  <LI>Setting constants inside of class with <STRONG>const</STRONG>=20
+keyword.</LI>
+  <LI id=3Dclass-definition><SPAN class=3Dcaption><STRONG>Class=20
+  definition:</STRONG></SPAN><BR>
+  <UL>
+    <LI><STRONG>general</STRONG><BR>
+    <TABLE style=3D"FONT-FAMILY: monospace" class=3D"php syntax">
+      <TBODY>
+      <TR class=3Dli1>
+        <TD class=3Dln><PRE class=3Dde1>1
+2
+</PRE></TD>
+        <TD class=3Dde1><PRE class=3Dde1><SPAN class=3Dkw2>class</SPAN> =
+SampleClass <SPAN class=3Dbr0>{</SPAN> &nbsp; &nbsp;=20
+<SPAN class=3Dbr0>}</SPAN></PRE></TD></TR></TBODY></TABLE></LI>
+    <LI><STRONG>abstract</STRONG> - It is not allowed to create an =
+instance of a=20
+    class that has been defined as abstract<BR>
+    <TABLE style=3D"FONT-FAMILY: monospace" class=3D"php syntax">
+      <TBODY>
+      <TR class=3Dli1>
+        <TD class=3Dln><PRE class=3Dde1>1
+2
+</PRE></TD>
+        <TD class=3Dde1><PRE class=3Dde1>abstract <SPAN =
+class=3Dkw2>class</SPAN> SampleClass <SPAN class=3Dbr0>{</SPAN>&nbsp; =
+&nbsp;=20
+<SPAN class=3Dbr0>}</SPAN></PRE></TD></TR></TBODY></TABLE></LI>
+    <LI><STRONG>final</STRONG> - Prevents the class to be extended<BR>
+    <TABLE style=3D"FONT-FAMILY: monospace" class=3D"php syntax">
+      <TBODY>
+      <TR class=3Dli1>
+        <TD class=3Dln><PRE class=3Dde1>1
+2
+</PRE></TD>
+        <TD class=3Dde1><PRE class=3Dde1>final <SPAN =
+class=3Dkw2>class</SPAN> SampleClass <SPAN class=3Dbr0>{</SPAN>
+<SPAN class=3Dbr0>}</SPAN></PRE></TD></TR></TBODY></TABLE></LI></UL>
+  <LI id=3Dclass-member-declaration><SPAN class=3Dcaption><STRONG>Class =
+members=20
+  declaration:</STRONG></SPAN><BR>
+  <UL>
+    <LI><STRONG>static</STRONG> - Declaring class members or methods as =
+static=20
+    makes them accessible without needing an instantiation of the =
+class<BR>
+    <TABLE style=3D"FONT-FAMILY: monospace" class=3D"php syntax">
+      <TBODY>
+      <TR class=3Dli1>
+        <TD class=3Dln><PRE class=3Dde1>1
+2
+3
+4
+5
+6
+7
+8
+</PRE></TD>
+        <TD class=3Dde1><PRE class=3Dde1><SPAN class=3Dkw2>class</SPAN> =
+SampleClass <SPAN class=3Dbr0>{</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp;=20
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dkw2>public</SPAN> <A =
+href=3D"http://www.php.net/static"><SPAN class=3Dkw3>static</SPAN></A> =
+<SPAN class=3Dre0>$class_propery</SPAN> <SPAN class=3Dsy0>=3D</SPAN> =
+<SPAN class=3Dst0>"foo"</SPAN><SPAN class=3Dsy0>;</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp;=20
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dkw2>public</SPAN> <A =
+href=3D"http://www.php.net/static"><SPAN class=3Dkw3>static</SPAN></A> =
+class_method<SPAN class=3Dbr0>(</SPAN><SPAN class=3Dbr0>)</SPAN> <SPAN =
+class=3Dbr0>{</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <SPAN =
+class=3Dco1>//code here</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dbr0>}</SPAN>
+<SPAN class=3Dbr0>}</SPAN></PRE></TD></TR></TBODY></TABLE></LI>
+    <LI><STRONG>final</STRONG> - Prevents child classes from overriding =
+a=20
+    method<BR>
+    <TABLE style=3D"FONT-FAMILY: monospace" class=3D"php syntax">
+      <TBODY>
+      <TR class=3Dli1>
+        <TD class=3Dln><PRE class=3Dde1>1
+2
+3
+4
+5
+6
+</PRE></TD>
+        <TD class=3Dde1><PRE class=3Dde1><SPAN class=3Dkw2>class</SPAN> =
+SampleClass <SPAN class=3Dbr0>{</SPAN>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; final <SPAN class=3Dkw2>public</SPAN> =
+class_method<SPAN class=3Dbr0>(</SPAN><SPAN class=3Dbr0>)</SPAN> <SPAN =
+class=3Dbr0>{</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <SPAN =
+class=3Dco1>//code here</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dbr0>}</SPAN>
+<SPAN =
+class=3Dbr0>}</SPAN></PRE></TD></TR></TBODY></TABLE></LI></UL></LI>
+  <LI id=3Dclass-member-visibility><SPAN class=3Dcaption><STRONG>Class =
+members=20
+  visibility:</STRONG></SPAN><BR>
+  <UL>
+    <LI><STRONG>public</STRONG> - Public declared items can be accessed=20
+    everywhere<BR>
+    <TABLE style=3D"FONT-FAMILY: monospace" class=3D"php syntax">
+      <TBODY>
+      <TR class=3Dli1>
+        <TD class=3Dln><PRE class=3Dde1>1
+2
+3
+4
+5
+6
+7
+8
+</PRE></TD>
+        <TD class=3Dde1><PRE class=3Dde1><SPAN class=3Dkw2>class</SPAN> =
+SampleClass <SPAN class=3Dbr0>{</SPAN>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dkw2>public</SPAN> <SPAN =
+class=3Dre0>$class_propery</SPAN> <SPAN class=3Dsy0>=3D</SPAN> <SPAN =
+class=3Dst0>"foo"</SPAN><SPAN class=3Dsy0>;</SPAN>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dkw2>public</SPAN> =
+class_method<SPAN class=3Dbr0>(</SPAN><SPAN class=3Dbr0>)</SPAN> <SPAN =
+class=3Dbr0>{</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <SPAN =
+class=3Dco1>//code here</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dbr0>}</SPAN>
+<SPAN class=3Dbr0>}</SPAN></PRE></TD></TR></TBODY></TABLE></LI>
+    <LI><STRONG>private</STRONG> - Private limits visibility only to the =
+class=20
+    that defines the item<BR>
+    <TABLE style=3D"FONT-FAMILY: monospace" class=3D"php syntax">
+      <TBODY>
+      <TR class=3Dli1>
+        <TD class=3Dln><PRE class=3Dde1>1
+2
+3
+4
+5
+6
+7
+8
+</PRE></TD>
+        <TD class=3Dde1><PRE class=3Dde1><SPAN class=3Dkw2>class</SPAN> =
+SampleClass <SPAN class=3Dbr0>{</SPAN>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dkw2>private</SPAN> <SPAN =
+class=3Dre0>$class_propery</SPAN> <SPAN class=3Dsy0>=3D</SPAN> <SPAN =
+class=3Dst0>"foo"</SPAN><SPAN class=3Dsy0>;</SPAN>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dkw2>private</SPAN> =
+class_method<SPAN class=3Dbr0>(</SPAN><SPAN class=3Dbr0>)</SPAN> <SPAN =
+class=3Dbr0>{</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <SPAN =
+class=3Dco1>//code here</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dbr0>}</SPAN>
+<SPAN class=3Dbr0>}</SPAN></PRE></TD></TR></TBODY></TABLE></LI>
+    <LI><STRONG>protected</STRONG> - Protected limits access to =
+inherited and=20
+    parent classes (and to the class that defines the item)<BR>
+    <TABLE style=3D"FONT-FAMILY: monospace" class=3D"php syntax">
+      <TBODY>
+      <TR class=3Dli1>
+        <TD class=3Dln><PRE class=3Dde1>1
+2
+3
+4
+5
+6
+7
+8
+</PRE></TD>
+        <TD class=3Dde1><PRE class=3Dde1><SPAN class=3Dkw2>class</SPAN> =
+SampleClass <SPAN class=3Dbr0>{</SPAN>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; protected <SPAN =
+class=3Dre0>$class_propery</SPAN> <SPAN class=3Dsy0>=3D</SPAN> <SPAN =
+class=3Dst0>"foo"</SPAN><SPAN class=3Dsy0>;</SPAN>
+&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; protected class_method<SPAN =
+class=3Dbr0>(</SPAN><SPAN class=3Dbr0>)</SPAN> <SPAN =
+class=3Dbr0>{</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <SPAN =
+class=3Dco1>//code here</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; <SPAN class=3Dbr0>}</SPAN>
+<SPAN =
+class=3Dbr0>}</SPAN></PRE></TD></TR></TBODY></TABLE></LI></UL></LI></UL><=
+/DIV>
+<DIV class=3Dbox>
+<H2 id=3Ddatetime><SPAN =
+class=3Dhdr><STRONG>Date/Time</STRONG></SPAN></H2>
+<UL>
+  <LI id=3Ddatetime-functions><SPAN=20
+  class=3Dcaption><STRONG>Functions:</STRONG></SPAN><BR>
+  <UL>
+    <LI><STRONG>string <A href=3D"http://docs.php.net/date">date</A>( =
+string=20
+    $format , [ int $timestamp ] )</STRONG> - <EM>Returns a string =
+formatted=20
+    according to the given format string using the given integer =
+timestamp or=20
+    the current time if no timestamp is given</EM></LI>
+    <LI><STRONG>void <A =
+href=3D"http://docs.php.net/date_add">date_add</A>(=20
+    DateTime $object , DateInterval $interval )</STRONG> - <EM>Adds an =
+amount of=20
+    days, months, years, hours, minutes and seconds to a DateTime=20
+    object</EM></LI>
+    <LI><STRONG>int <A href=3D"http://docs.php.net/mktime">mktime</A>( [ =
+int $hour=20
+    ,[ int $minute ,[ int $second ,[ int $month ,[ int $day ,[ int $year =
+,[ int=20
+    $is_dst ]]]]]]] )</STRONG> - <EM>Returns the Unix timestamp =
+corresponding to=20
+    the arguments given</EM></LI>
+    <LI><STRONG>int <A =
+href=3D"http://docs.php.net/strtotime">strtotime</A>(=20
+    string $time ,[ int $now ] )</STRONG> - <EM>The function expects to =
+be given=20
+    a string containing a US English date format and will try to parse =
+that=20
+    format into a Unix timestamp</EM></LI>
+    <LI><STRONG>int <A =
+href=3D"http://docs.php.net/time">time</A>()</STRONG> -=20
+    <EM>Return current Unix timestamp</EM></LI></UL></LI>
+  <LI id=3Ddatetime-formats><SPAN class=3Dcaption><STRONG>Date/Time=20
+  Formats:</STRONG></SPAN><BR>
+  <UL>
+    <LI><STRONG>Day</STRONG><BR>
+    <UL>
+      <LI><STRONG>d</STRONG> - <EM>01 - 31</EM></LI>
+      <LI><STRONG>j</STRONG> - <EM>1 - 31</EM></LI>
+      <LI><STRONG>D</STRONG> - <EM>Mon - Sun</EM></LI>
+      <LI><STRONG>l</STRONG> - <EM>Monday - Sunday</EM></LI></UL></LI>
+    <LI><STRONG>Month</STRONG><BR>
+    <UL>
+      <LI><STRONG>M</STRONG> - <EM>Jan - Dec</EM></LI>
+      <LI><STRONG>F</STRONG> - <EM>January - December</EM></LI>
+      <LI><STRONG>m</STRONG> - <EM>01 - 12</EM></LI>
+      <LI><STRONG>n</STRONG> - <EM>1 - 12</EM></LI></UL></LI>
+    <LI><STRONG>Year</STRONG><BR>
+    <UL>
+      <LI><STRONG>Y</STRONG> - <EM>2003, 2008</EM></LI>
+      <LI><STRONG>y</STRONG> - <EM>03, 08</EM></LI></UL></LI>
+    <LI><STRONG>Time</STRONG><BR>
+    <UL>
+      <LI><STRONG>a</STRONG> - <EM>am, pm</EM></LI>
+      <LI><STRONG>A</STRONG> - <EM>AM, PM</EM></LI>
+      <LI><STRONG>g</STRONG> - 12 hours - <EM>1 - 12</EM></LI>
+      <LI><STRONG>h</STRONG> - 12 hours - <EM>00 - 12</EM></LI>
+      <LI><STRONG>H</STRONG> - 24 hours - <EM>00 - 23</EM></LI>
+      <LI><STRONG>G</STRONG> - 24 hours - <EM>0 - 23</EM></LI>
+      <LI><STRONG>i</STRONG> - minutes - <EM>00 - 59</EM></LI>
+      <LI><STRONG>s</STRONG> - seconds - <EM>00 -=20
+59</EM></LI></UL></LI></UL></LI></UL></DIV>
+<DIV class=3Dbox>
+<H2 id=3Dpredefined-variables><SPAN class=3Dhdr><STRONG>Predefined=20
+Variables</STRONG></SPAN></H2>
+<UL>
+  <LI id=3Dpv-server><SPAN =
+class=3Dcaption><STRONG>$_SERVER:</STRONG></SPAN><BR>
+  <UL>
+    <LI class=3Dwarning>The values in the array are provided by the =
+server,=20
+    there's no guarantee that all the values will be available on your=20
+    configuration. In this list you can find the most used values =
+only.</LI>
+    <LI></LI>
+    <LI><STRONG>PHP_SELF</STRONG> - the filename of the currently =
+executing=20
+    script, relative to the document root</LI>
+    <LI><STRONG>SERVER_ADDR</STRONG> - the IP address of the server</LI>
+    <LI><STRONG>SERVER_NAME</STRONG> - the name of the server</LI>
+    <LI><STRONG>REQUEST_METHOD</STRONG> - which request method was used =
+to=20
+    access the page: GET, HEAD, POST, PUT</LI>
+    <LI><STRONG>QUERY_STRING</STRONG> - the query string, if any, via =
+which the=20
+    page was accessed</LI>
+    <LI><STRONG>DOCUMENT_ROOT</STRONG> - the document root directory =
+under which=20
+    the current script is executing</LI>
+    <LI><STRONG>HTTP_REFERER</STRONG> - the address of the page (if any) =
+which=20
+    referred the user agent to the current page</LI>
+    <LI><STRONG>REMOTE_ADDR</STRONG> - the IP address from which the =
+user is=20
+    viewing the current page</LI>
+    <LI><STRONG>SCRIPT_FILENAME</STRONG> - the absolute pathname of the=20
+    currently executing script</LI>
+    <LI><STRONG>REQUEST_URI</STRONG> - The URI which was given in order =
+to=20
+    access this page; e.g. <EM>/index.html</EM></LI></UL></LI>
+  <LI id=3Dpv-files><SPAN =
+class=3Dcaption><STRONG>$_FILES:</STRONG></SPAN><BR>
+  <UL>
+    <LI><STRONG>$_FILES['userfile']['name']</STRONG> - the original name =
+of the=20
+    file on the client machine</LI>
+    <LI><STRONG>$_FILES['userfile']['type']</STRONG> - the mime type of =
+the=20
+    file, if the browser provided this information</LI>
+    <LI><STRONG>$_FILES['userfile']['size']</STRONG> - the size, in =
+bytes, of=20
+    the uploaded file</LI>
+    <LI><STRONG>$_FILES['userfile']['tmp_name']</STRONG> - the temporary =
+
+    filename of the file in which the uploaded file was stored on the=20
+server</LI>
+    <LI><STRONG>$_FILES['userfile']['error']</STRONG> - The error code=20
+    associated with this file upload<BR>
+    <UL>
+      <LI><SPAN class=3Dcaption><STRONG>Error =
+codes:</STRONG></SPAN></LI>
+      <LI><STRONG>UPLOAD_ERR_OK</STRONG> or value <STRONG>1</STRONG> - =
+no=20
+      error</LI>
+      <LI><STRONG>UPLOAD_ERR_INI_SIZE</STRONG> or value =
+<STRONG>2</STRONG> - the=20
+      uploaded file exceeds the <A=20
+      =
+href=3D"http://www.php.net/manual/en/ini.core.php#ini.upload-max-filesize=
+">upload_max_filesize</A>=20
+      directive in php.ini</LI>
+      <LI><STRONG>UPLOAD_ERR_PARTIAL</STRONG> or value =
+<STRONG>3</STRONG> - the=20
+      uploaded file was only partially uploaded</LI>
+      <LI><STRONG>UPLOAD_ERR_NO_FILE</STRONG> or value =
+<STRONG>4</STRONG> - no=20
+      file was uploaded</LI>
+      <LI><STRONG>UPLOAD_ERR_NO_TMP_DIR</STRONG> or value =
+<STRONG>5</STRONG> -=20
+      missing temporary folder</LI>
+      <LI><STRONG>UPLOAD_ERR_CANT_WRITE</STRONG> or value =
+<STRONG>7</STRONG> -=20
+      failed to write file to disk</LI>
+      <LI><STRONG>UPLOAD_ERR_EXTENSION</STRONG> or value =
+<STRONG>8</STRONG> -=20
+      file upload stopped by=20
+extension</LI></UL></LI></UL></LI></UL></DIV></DIV></BODY></HTML>
+
+------=_NextPart_000_0000_01D01FE0.5B23E9C0
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.serversidemagazine.com/cheat-sheets/PHP5/css/base.css
+
+HTML {
+	FONT: 13px/1.231 arial, helvetica, clean, sans-serif; BACKGROUND: #fff; =
+COLOR: #000
+}
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+PRE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+CODE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+LEGEND {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+TEXTAREA {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+BLOCKQUOTE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+TH {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+TD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+TABLE {
+	BORDER-SPACING: 0; BORDER-COLLAPSE: collapse; FONT-SIZE: inherit
+}
+FIELDSET {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: =
+0px
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: =
+0px
+}
+ADDRESS {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CAPTION {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CITE {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CODE {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+DFN {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+TH {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+VAR {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+EM {
+	FONT-STYLE: italic
+}
+STRONG {
+	FONT-WEIGHT: bold
+}
+LI {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+CAPTION {
+	TEXT-ALIGN: left
+}
+TH {
+	TEXT-ALIGN: left
+}
+H1 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H2 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H3 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H4 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H5 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H6 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+Q:before {
+	CONTENT: ''
+}
+Q:after {
+	CONTENT: ''
+}
+ABBR {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; FONT-VARIANT: normal; BORDER-TOP: =
+0px; BORDER-RIGHT: 0px
+}
+ACRONYM {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; FONT-VARIANT: normal; BORDER-TOP: =
+0px; BORDER-RIGHT: 0px
+}
+SUP {
+	VERTICAL-ALIGN: text-top
+}
+SUB {
+	VERTICAL-ALIGN: text-bottom
+}
+INPUT {
+	FONT-FAMILY: inherit; FONT-SIZE: inherit; FONT-WEIGHT: inherit
+}
+TEXTAREA {
+	FONT-FAMILY: inherit; FONT-SIZE: inherit; FONT-WEIGHT: inherit
+}
+SELECT {
+	FONT-FAMILY: inherit; FONT-SIZE: inherit; FONT-WEIGHT: inherit
+}
+INPUT {
+=09
+}
+TEXTAREA {
+=09
+}
+SELECT {
+=09
+}
+LEGEND {
+	COLOR: #000
+}
+PRE {
+	LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+CODE {
+	LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+KBD {
+	LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+SAMP {
+	LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+TT {
+	LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+A {
+	TEXT-DECORATION: none
+}
+.clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: =
+"."
+}
+BODY {
+	LINE-HEIGHT: 170%; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, =
+sans-serif; COLOR: #444; FONT-SIZE: 100%
+}
+A {
+	COLOR: #3ca2a2
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	LINE-HEIGHT: 48px; BACKGROUND: url(../../images/logo_bg.jpg) #2d2d29 =
+no-repeat left top; HEIGHT: 48px; COLOR: #3ca2a2; FONT-SIZE: 131%
+}
+H1 A {
+	LINE-HEIGHT: 48px; PADDING-LEFT: 62px; WIDTH: 180px; DISPLAY: block; =
+FLOAT: left; HEIGHT: 48px; COLOR: #fff
+}
+H1 A:hover {
+	TEXT-DECORATION: none
+}
+H1 A SPAN.mag {
+	COLOR: #4a4a43
+}
+H1 SPAN.update {
+	FONT-STYLE: italic; COLOR: #ccc; FONT-SIZE: 77%
+}
+#doc {
+	MARGIN: 0px 20px
+}
+UL.menu {
+	BORDER-BOTTOM: #d9d9d9 1px solid; PADDING-BOTTOM: 20px; MARGIN: 20px
+}
+UL.menu LI {
+	LINE-HEIGHT: 200%; FLOAT: left
+}
+UL.menu LI SPAN.hdr-m {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 23px; =
+BACKGROUND: url(../../images/r-edge.gif) #3ca2a2 no-repeat right center; =
+COLOR: #fff; MARGIN-RIGHT: 10px; PADDING-TOP: 2px
+}
+UL.menu LI A {
+	MARGIN-RIGHT: 10px
+}
+#doc SPAN.hdr {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; =
+BACKGROUND: #3ca2a2; COLOR: #fff; PADDING-TOP: 3px
+}
+.box {
+	BORDER-BOTTOM: #d9d9d9 1px solid; BORDER-LEFT: #d9d9d9 1px solid; =
+PADDING-BOTTOM: 10px; MARGIN: 15px; PADDING-LEFT: 10px; PADDING-RIGHT: =
+10px; BORDER-TOP: #d9d9d9 1px solid; BORDER-RIGHT: #d9d9d9 1px solid; =
+PADDING-TOP: 10px
+}
+.box H2 {
+	MARGIN-BOTTOM: 15px; FONT-SIZE: 123.1%
+}
+.box SPAN.caption {
+	COLOR: #ff3300
+}
+.box SPAN.def {
+=09
+}
+.box UL LI {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; =
+MARGIN-LEFT: 20px; PADDING-TOP: 0px
+}
+.box UL LI.warning {
+	BORDER-BOTTOM: #ff6e6b 1px solid; BORDER-LEFT: #ff6e6b 1px solid; =
+WIDTH: 700px; DISPLAY: block; BACKGROUND: #fee3e3; BORDER-TOP: #ff6e6b =
+1px solid; BORDER-RIGHT: #ff6e6b 1px solid
+}
+
+------=_NextPart_000_0000_01D01FE0.5B23E9C0
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.serversidemagazine.com/cheat-sheets/PHP5/css/syntax.css
+
+.syntax {
+	BORDER-BOTTOM: #d9d9d9 1px solid; BORDER-LEFT: #d9d9d9 1px solid; =
+OVERFLOW-X: scroll; OVERFLOW-Y: hidden; BACKGROUND-COLOR: #fbfbfb; =
+MARGIN: 10px; WIDTH: 500px; COLOR: #100; BORDER-TOP: #d9d9d9 1px solid; =
+BORDER-RIGHT: #d9d9d9 1px solid
+}
+.syntax {
+	OVERFLOW-X: scroll; OVERFLOW-Y: hidden; MARGIN: 10px; WIDTH: 500px
+}
+.syntax TABLE {
+	BORDER-COLLAPSE: collapse
+}
+.syntax DIV {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 2px
+}
+.syntax TD {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 2px
+}
+.syntax .ln {
+	TEXT-ALIGN: right; BACKGROUND: #3ca2a2; COLOR: #fff; OVERFLOW: visible
+}
+.syntax PRE {
+	LINE-HEIGHT: 130%; MARGIN: 0px; WIDTH: auto; FLOAT: none; CLEAR: none; =
+FONT-SIZE: 12px; OVERFLOW: hidden
+}
+
+------=_NextPart_000_0000_01D01FE0.5B23E9C0--
