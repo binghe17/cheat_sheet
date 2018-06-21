@@ -1,5 +1,5 @@
 # chm_book
-developer cheat sheet
+PDF-print: developer cheat sheet
 
 # 其他的cheat sheet
 https://devhints.io/
